@@ -1,0 +1,30 @@
+{
+  "name": "acquia/blt-phpcs",
+  "type":"composer-plugin",
+  "description": "PHP_CodeSniffer integration for Acquia BLT",
+  "license": "GPL-2.0+",
+  "authors":[
+    {
+      "name": "Acquia Engineering",
+      "homepage": "https://www.acquia.com",
+      "role": "Maintainer"
+    }
+  ],
+  "require": {
+    "acquia/coding-standards": "^0.4.3",
+    "composer-plugin-api": "^1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Acquia\\BltPhpcs\\": "./src/"
+    }
+  },
+  "extra": {
+    "class": "Acquia\\BltPhpcs\\Composer\\BltPhpcsPlugin",
+    "phpcodesniffer-search-depth": "4"
+  },
+  "require-dev": {
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2",
+    "composer/composer": "^1.10"
+  }
+}
