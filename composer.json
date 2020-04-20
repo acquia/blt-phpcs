@@ -12,7 +12,8 @@
   ],
   "require": {
     "acquia/coding-standards": "^0.4.3",
-    "composer-plugin-api": "^1.1"
+    "composer-plugin-api": "^1.1",
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2"
   },
   "autoload": {
     "psr-4": {
@@ -24,7 +25,6 @@
     "phpcodesniffer-search-depth": "4"
   },
   "require-dev": {
-    "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2",
     "composer/composer": "^1.10"
   }
 }
