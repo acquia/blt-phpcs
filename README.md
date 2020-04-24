@@ -3,7 +3,7 @@ Acquia BLT PHP_CodeSniffer
 
 This is an [Acquia BLT](https://github.com/acquia/blt) plugin providing integration with [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) and [Acquia’s Coding Standards](https://github.com/acquia/coding-standards-php).
 
-This plugin provides a set of commands in the `tests:phpcs` namespace that use PHP_CodeSniffer to check for coding standard violations.
+This plugin provides a set of commands in the `validate:phpcs` namespace that use PHP_CodeSniffer to check for coding standard violations.
 
 When first installed, it will create a default phpcs.xml file utilizing Acquia’s Coding Standards if one does not exist.
 
