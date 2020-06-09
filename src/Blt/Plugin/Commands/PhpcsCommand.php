@@ -6,7 +6,7 @@ use Acquia\Blt\Robo\BltTasks;
 use Acquia\Blt\Robo\Exceptions\BltException;
 
 /**
- * Defines commands in the "tests:phpcs:sniff:all*" namespace.
+ * Defines commands in the "validate:phpcs" namespace.
  */
 class PhpcsCommand extends BltTasks {
 
@@ -16,9 +16,7 @@ class PhpcsCommand extends BltTasks {
    * By default, these include custom themes, modules, and tests. This is
    * configured via phpcs.xml in the project root directory.
    *
-   * @command tests:phpcs:sniff:all
-   *
-   * @aliases tpsa phpcs tests:phpcs:sniff validate:phpcs
+   * @command validate:phpcs
    */
   public function sniffFileSets() {
     $exit_code = $this->doSniff();
@@ -56,8 +54,7 @@ class PhpcsCommand extends BltTasks {
    * @param string $file_list
    *   A list of files to scan, separated by \n.
    *
-   * @command tests:phpcs:sniff:files
-   * @aliases tpsf
+   * @command validate:phpcs:files
    *
    * @return int
    *   Exit code.
@@ -87,8 +84,7 @@ class PhpcsCommand extends BltTasks {
    * This command will execute PHP Codesniffer against modified/untracked files
    * if those files are a subset of the phpcs.filesets filesets.
    *
-   * @command tests:phpcs:sniff:modified
-   * @aliases tpsm
+   * @command validate:phpcs:modified
    *
    * @return int
    *   Exit code.
@@ -107,8 +103,7 @@ class PhpcsCommand extends BltTasks {
    * This command will execute PHP Codesniffer against staged files
    * if those files are a subset of the phpcs.filesets filesets.
    *
-   * @command tests:phpcs:sniff:staged
-   * @aliases tpss
+   * @command validate:phpcs:staged
    *
    * @return int
    *   Exit code.
