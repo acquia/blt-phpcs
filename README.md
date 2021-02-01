@@ -15,7 +15,7 @@ To use this plugin, you must already have a Drupal project using BLT 12 or highe
 
 In your project, require the plugin with Composer:
 
-`composer require –dev acquia/blt-phpcs`
+`composer require --dev acquia/blt-phpcs`
 
 # License
 
